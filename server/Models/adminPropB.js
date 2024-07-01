@@ -1,8 +1,9 @@
 const { mongoose } = require("mongoose");
 
 const adminPropBSchema =  mongoose.Schema(
-    {picture:{type: String, required:[ true, "picture is required"]},
-    type: {type: String, required: [true, "type is required"]}
+    {
+        picture:{type: String, required:[ true, "picture is required"]},
+        type:{type: String, required:[ true, "type is required"]}
 
 },
  {timeStamps: true})
